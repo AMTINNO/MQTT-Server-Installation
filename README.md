@@ -81,6 +81,8 @@ By default, the Mosquitto server is not secured. However, you can make some conf
 Output.
        john_doe:$6$TSzNycsj...5Qyvgd4g==
         mary_smith:$6$DtlKf1lG.../rLHIL0Q==
+
 12.	Restart the mosquitto service to load the new changes.
+
        $ sudo systemctl restart mosquitto
 
