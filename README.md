@@ -57,6 +57,7 @@ Terminal 1:
          $ mosquitto_pub -h localhost -t /home/sensors/temp/kitchen -m "Kitchen Temperature: 26°C"
 
 Terminal 2:
+
          $ mosquitto_sub -h localhost -t /home/sensors/temp/kitchen 
 
 # 3. Secure the Mosquitto Server
