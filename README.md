@@ -14,7 +14,7 @@ You'll pull the mosquitto package from Ubuntu's software repository by executing
 
 1.	SSH to your server and update the package information index.
 
-   $ sudo apt update 
+          $ sudo apt update 
 
 2.	Install the mosquitto package.
  $ sudo apt install -y mosquitto
