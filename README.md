@@ -63,11 +63,13 @@ By default, the Mosquitto server is not secured. However, you can make some conf
 6.	Open the /etc/mosquitto/passwd file with nano.
  $ sudo nano /etc/mosquitto/passwd
 7.	Then, populate the file with the account details for the users that you want to connect to the Mosquitto server. Replace EXAMPLE_PASSWORD and EXAMPLE_PASSWORD_2 with strong values.
-8.	 john_doe:EXAMPLE_PASSWORD
- mary_smith:EXAMPLE_PASSWORD_2
+8.	       john_doe:EXAMPLE_PASSWORD
+           mary_smith:EXAMPLE_PASSWORD_2
 9.	Save and close the file.
 10.	Next, use the mosquitto_passwd utility to encrypt the passwords.
- $ sudo mosquitto_passwd -U /etc/mosquitto/passwd
+
+        $ sudo mosquitto_passwd -U /etc/mosquitto/passwd
+
 11.	Your passwords are now encrypted in a format that only the Mosquitto server can decrypt. Use the Linux cat command to confirm the encryption process.
 
         $ sudo cat /etc/mosquitto/passwd
