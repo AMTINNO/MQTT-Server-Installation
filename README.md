@@ -49,7 +49,9 @@ o	Restart the mosquitto service:
 # 2. Install and Test the Mosquitto Clients
 When using an MQTT client, you connect to the Mosquitto broker to send and receive messages on different topics depending on the application's use case. A client can either be a publisher, a subscriber, or both.
 1.	The Mosquitto package ships with a command-line client that allows you to test the server functionalities. Install the client.
- $ sudo apt install -y mosquitto-clients
+ 
+       $ sudo apt install -y mosquitto-clients
+
 2.	Next, you'll subscribe to a topic. In the MQQT protocol, a topic is a string that the server/broker uses to filter messages for the connected clients. For instance, here are some sample topics that you can use when using the Mosquitto broker in a home automation application.
 o	home/lights/sitting_room
 o	home/lights/kitchen
