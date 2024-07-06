@@ -100,3 +100,9 @@ Output.
 To republish the same message on Terminal 1 an error message will be shown as you are not authenticated to the network.
 
 <img src="./images/SEC_MQTT01.jpg" width=100% height=40%>
+From this moment, the login data, both for the publication and for the subscription to the topics have to be specified.
+
+To do so, use the following syntax:
+
+Publication: mosquitto_pub -h address -t topic -m "message" -u "username" -P "password"
+Subscription: mosquitto_sub -h address-t topic-u "usurname" -P "password"
