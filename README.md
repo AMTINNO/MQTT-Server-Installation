@@ -79,6 +79,7 @@ By default, the Mosquitto server is not secured. However, you can make some conf
         $ sudo cat /etc/mosquitto/passwd
 
 Output.
+
        john_doe:$6$TSzNycsj...5Qyvgd4g==
         mary_smith:$6$DtlKf1lG.../rLHIL0Q==
 
