@@ -18,9 +18,7 @@ You'll pull the mosquitto package from Ubuntu's software repository by executing
          $ sudo apt install -y mosquitto
 
 3.	The mosquitto package should now load on your server. Confirm the status of the mosquitto service.
-         
-        $ sudo systemctl status mosquitto
-<img src="./images/MQTT_status.jpg" width=100% height=40%>
+
 Ensure the package is loaded and active.
 
  ● mosquitto.service - Mosquitto MQTT v3.1/v3.1.1 Broker
@@ -46,6 +44,7 @@ o	Restart the mosquitto service:
 o	Restart the mosquitto service:
 
         $ sudo systemctl status mosquitto
+        <img src="./images/MQTT_status.jpg" width=100% height=40%>
         
 # 2. Install and Test the Mosquitto Clients
 When using an MQTT client, you connect to the Mosquitto broker to send and receive messages on different topics depending on the application's use case. A client can either be a publisher, a subscriber, or both.
