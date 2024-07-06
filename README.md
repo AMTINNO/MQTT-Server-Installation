@@ -99,4 +99,4 @@ Output.
 
 To republish the same message on Terminal 1 an error message will be shown as you are not authenticated to the network.
 
-<img src="./images/MQTT_TEST.png" width=100% height=40%>
+<img src="./images/SEC_MQTT01.jpg" width=100% height=40%>
