@@ -50,7 +50,10 @@ o	Restart the mosquitto service:
 When using an MQTT client, you connect to the Mosquitto broker to send and receive messages on different topics depending on the application's use case. A client can either be a publisher, a subscriber, or both.
 1.	The Mosquitto package ships with a command-line client that allows you to test the server functionalities. Install the client.
 
-       $ sudo apt install -y mosquitto-clients
+         $ sudo apt install -y mosquitto-clients
+
+
+         $ sudo apt install -y mosquitto-clients
 
 # 3. Secure the Mosquitto Server
 By default, the Mosquitto server is not secured. However, you can make some configuration settings to secure it with usernames and passwords.
