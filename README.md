@@ -17,9 +17,13 @@ You'll pull the mosquitto package from Ubuntu's software repository by executing
           $ sudo apt update 
 
 2.	Install the mosquitto package.
- $ sudo apt install -y mosquitto
+
+         $ sudo apt install -y mosquitto
+
 3.	The mosquitto package should now load on your server. Confirm the status of the mosquitto service.
- # $ sudo systemctl status mosquitto
+         
+        $ sudo systemctl status mosquitto
+
 Ensure the package is loaded and active.
  ● mosquitto.service - Mosquitto MQTT v3.1/v3.1.1 Broker
       Loaded: loaded (/lib/systemd/system/mosquitto.service; enabled; vendor pr>
