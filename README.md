@@ -1,6 +1,6 @@
 # MQTT-Server-Installation
 Introduction
-    Mosquitto is open-source message broker that uses  Message Queuing Telemetry Transport (MQTT) Protocol. MQTT runs over TCP/IP and Standard messaging platform for  Internet of Things (IoT). MQQT protocol is  lightweight Protocal , Used minimal resources such as short battery life,Mosquitto application supports  "Publisher/Subscriber topology". 
+    Mosquitto is open-source message broker that uses  Message Queuing Telemetry Transport (MQTT) Protocol. MQTT runs over TCP/IP and Standard messaging platform for  Internet of Things (IoT). MQQT protocol is  lightweight Protocal , Used minimal resources such as short battery life,Mosquitto application supports  "Publisher/Subscriber Topology". 
 Prerequisites
 To follow along with this guide, you need:
 •	An Ubuntu 20.04 server.
