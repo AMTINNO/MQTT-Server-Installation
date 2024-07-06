@@ -56,6 +56,9 @@ Terminal 1:
 
          $ mosquitto_pub -h localhost -t /home/sensors/temp/kitchen -m "Kitchen Temperature: 26°C"
 
+Terminal 2:
+         $ mosquitto_sub -h localhost -t /home/sensors/temp/kitchen 
+
 # 3. Secure the Mosquitto Server
 By default, the Mosquitto server is not secured. However, you can make some configuration settings to secure it with usernames and passwords.
 1.	Mosquitto reads configuration information from the following location.
