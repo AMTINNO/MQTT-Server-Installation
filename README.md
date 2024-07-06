@@ -104,6 +104,8 @@ From this moment, the login data, both for the publication and for the subscript
 
 To do so, use the following syntax:
 
-Publication:   $ mosquitto_pub -h address -t topic -m "message" -u "username" -P "password"
+Publication:   
+       $ mosquitto_pub -h address -t topic -m "message" -u "username" -P "password"
 
-Subscription:  $ mosquitto_sub -h address-t topic-u "usurname" -P "password"
+Subscription:  
+       $ mosquitto_sub -h address-t topic-u "usurname" -P "password"
