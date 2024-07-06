@@ -12,11 +12,11 @@ To follow along with this guide, you need:
 # 1. Install the Mosquitto Server
 You'll pull the mosquitto package from Ubuntu's software repository by executing the following steps.
 1.	SSH to your server and update the package information index.
- $ sudo apt update 
+#  $ sudo apt update 
 2.	Install the mosquitto package.
  $ sudo apt install -y mosquitto
 3.	The mosquitto package should now load on your server. Confirm the status of the mosquitto service.
- $ sudo systemctl status mosquitto
+ # $ sudo systemctl status mosquitto
 Ensure the package is loaded and active.
  ● mosquitto.service - Mosquitto MQTT v3.1/v3.1.1 Broker
       Loaded: loaded (/lib/systemd/system/mosquitto.service; enabled; vendor pr>
@@ -27,11 +27,11 @@ Ensure the package is loaded and active.
  ...
 4.	Once running, you can manage the mosquitto services by executing the following commands.
 o	Stop the mosquitto service:
-  $ sudo systemctl stop mosquitto
+ #  $ sudo systemctl stop mosquitto
 o	Start the mosquitto service:
-  $ sudo systemctl start mosquitto
+ #  $ sudo systemctl start mosquitto
 o	Restart the mosquitto service:
-  $ sudo systemctl restart mosquitto
+ #  $ sudo systemctl restart mosquitto
 # 2. Install and Test the Mosquitto Clients
 When using an MQTT client, you connect to the Mosquitto broker to send and receive messages on different topics depending on the application's use case. A client can either be a publisher, a subscriber, or both.
 1.	The Mosquitto package ships with a command-line client that allows you to test the server functionalities. Install the client.
@@ -85,15 +85,4 @@ Output.
  mary_smith:$6$DtlKf1lG.../rLHIL0Q==
 12.	Restart the mosquitto service to load the new changes.
 $ sudo systemctl restart mosquitto
-13.	From this point forward, you should execute any pub/sub command using the syntax below. Remember to replace john_doe and EXAMPLE_PASSWORD with the credentials that you defined in the password file.
-14.	$ mosquitto_sub -u john_doe -P EXAMPLE_PASSWORD -t "home/lights/sitting_room"
-$ mosquitto_pub -u john_doe -P EXAMPLE_PASSWORD -t "home/lights/sitting_room" -m "ON"
-Unauthenticated commands or connections with incorrect credentials should now fail.
-$ mosquitto_pub -m "ON" -t "home/lights/sitting_room"
-$ mosquitto_sub -t "home/lights/sitting_room"
-$ mosquitto_sub -u john_doe -P WRONG_PASSWORD -t "home/lights/sitting_room"
-$ mosquitto_pub -u john_doe -P WRONG_PASSWORD -t "home/lights/sitting_room" -m "ON"
-Output.
-...
-Connection error: Connection Refused: not authorised.
 
