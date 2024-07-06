@@ -69,7 +69,9 @@ By default, the Mosquitto server is not secured. However, you can make some conf
 10.	Next, use the mosquitto_passwd utility to encrypt the passwords.
  $ sudo mosquitto_passwd -U /etc/mosquitto/passwd
 11.	Your passwords are now encrypted in a format that only the Mosquitto server can decrypt. Use the Linux cat command to confirm the encryption process.
- $ sudo cat /etc/mosquitto/passwd
+
+        $ sudo cat /etc/mosquitto/passwd
+
 Output.
  john_doe:$6$TSzNycsj...5Qyvgd4g==
  mary_smith:$6$DtlKf1lG.../rLHIL0Q==
