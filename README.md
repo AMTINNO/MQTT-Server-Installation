@@ -44,7 +44,7 @@ o	Restart the mosquitto service:
 o	Restart the mosquitto service:
 
         $ sudo systemctl status mosquitto
-        <img src="./images/MQTT_status.jpg" width=100% height=40%>
+<img src="./images/MQTT_status.jpg" width=100% height=40%>
         
 # 2. Install and Test the Mosquitto Clients
 When using an MQTT client, you connect to the Mosquitto broker to send and receive messages on different topics depending on the application's use case. A client can either be a publisher, a subscriber, or both.
