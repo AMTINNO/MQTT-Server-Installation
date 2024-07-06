@@ -20,7 +20,7 @@ You'll pull the mosquitto package from Ubuntu's software repository by executing
 3.	The mosquitto package should now load on your server. Confirm the status of the mosquitto service.
          
         $ sudo systemctl status mosquitto
-<img src="./images/MQTT.jpg" width=100% height=40%>
+<img src="./images/MQTT_status.jpg" width=100% height=40%>
 Ensure the package is loaded and active.
 
  ● mosquitto.service - Mosquitto MQTT v3.1/v3.1.1 Broker
