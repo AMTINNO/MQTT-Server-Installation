@@ -53,12 +53,12 @@ When using an MQTT client, you connect to the Mosquitto broker to send and recei
 # 3. Secure the Mosquitto Server
 By default, the Mosquitto server is not secured. However, you can make some configuration settings to secure it with usernames and passwords.
 1.	Mosquitto reads configuration information from the following location.
- /etc/mosquitto/conf.d
+          /etc/mosquitto/conf.d
 2.	Create a default.conf under the directory.
- $ sudo nano /etc/mosquitto/conf.d/default.conf
+          $ sudo nano /etc/mosquitto/conf.d/default.conf
 3.	Paste the information below to disable anonymous connections and allow Mosquitto to read valid credentials from the /etc/mosquitto/passwd file.
 4.	 allow_anonymous false
- password_file /etc/mosquitto/passwd
+          password_file /etc/mosquitto/passwd
 5.	Save and close the file.
 6.	Open the /etc/mosquitto/passwd file with nano.
           $ sudo nano /etc/mosquitto/passwd
@@ -75,8 +75,8 @@ By default, the Mosquitto server is not secured. However, you can make some conf
         $ sudo cat /etc/mosquitto/passwd
 
 Output.
- john_doe:$6$TSzNycsj...5Qyvgd4g==
- mary_smith:$6$DtlKf1lG.../rLHIL0Q==
+       john_doe:$6$TSzNycsj...5Qyvgd4g==
+        mary_smith:$6$DtlKf1lG.../rLHIL0Q==
 12.	Restart the mosquitto service to load the new changes.
-$ sudo systemctl restart mosquitto
+       $ sudo systemctl restart mosquitto
 
