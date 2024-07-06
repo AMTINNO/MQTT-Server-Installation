@@ -32,7 +32,7 @@ o	Start the mosquitto service:
   $ sudo systemctl start mosquitto
 o	Restart the mosquitto service:
   $ sudo systemctl restart mosquitto
-2. Install and Test the Mosquitto Clients
+# 2. Install and Test the Mosquitto Clients
 When using an MQTT client, you connect to the Mosquitto broker to send and receive messages on different topics depending on the application's use case. A client can either be a publisher, a subscriber, or both.
 1.	The Mosquitto package ships with a command-line client that allows you to test the server functionalities. Install the client.
  $ sudo apt install -y mosquitto-clients
@@ -60,7 +60,7 @@ o	In the transport industry, MQQT devices monitor the location of trains in real
 o	Also, the Mosquitto broker can be used as a middle layer in a chat application to refresh the online status of users and pass messages between end-users.
 o	Another common scenario where the Mosquitto server can be a good fit is in decoupled systems. Clients can send data to the broker, which then sends the data to a database for permanent storage.
 10.	In addition to the above use-cases, there are dozens of libraries that you can use to connect to the Mosquitto server using your favorite programming language, including PHP, Python, Golang, and more.
-3. Secure the Mosquitto Server
+# 3. Secure the Mosquitto Server
 By default, the Mosquitto server is not secured. However, you can make some configuration settings to secure it with usernames and passwords.
 1.	Mosquitto reads configuration information from the following location.
  /etc/mosquitto/conf.d
