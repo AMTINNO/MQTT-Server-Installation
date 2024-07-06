@@ -11,8 +11,11 @@ To follow along with this guide, you need:
 <img src="./images/MQTT.jpg" width=100% height=40%>
 # 1. Install the Mosquitto Server
 You'll pull the mosquitto package from Ubuntu's software repository by executing the following steps.
+
 1.	SSH to your server and update the package information index.
-#  $ sudo apt update 
+
+   $ sudo apt update 
+
 2.	Install the mosquitto package.
  $ sudo apt install -y mosquitto
 3.	The mosquitto package should now load on your server. Confirm the status of the mosquitto service.
