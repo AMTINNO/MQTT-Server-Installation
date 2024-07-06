@@ -52,30 +52,6 @@ When using an MQTT client, you connect to the Mosquitto broker to send and recei
  
        $ sudo apt install -y mosquitto-clients
 
-2.	Next, you'll subscribe to a topic. In the MQQT protocol, a topic is a string that the server/broker uses to filter messages for the connected clients. For instance, here are some sample topics that you can use when using the Mosquitto broker in a home automation application.
-o	home/lights/sitting_room
-o	home/lights/kitchen
-o	home/lights/master_bedroom
-o	home/lights/kids_bedroom
-3.	To subscribe to a topic, execute the mosquitto_sub -t command followed by the name of the topic that you want to subscribe to. For example, to subscribe to the home/lights/sitting_room topic, execute.
- $ mosquitto_sub -t "home/lights/sitting_room"
-Please note that the above command has a blocking function and will put your shell terminal in a listening state.
-4.	Open a second terminal window and don't close the first one. This time around, publish an "ON" message to the topic home/lights/sitting_room topic using the mosquitto_pub -m command.
- $ mosquitto_pub -m "ON" -t "home/lights/sitting_room"
-5.	You should now receive the ON payload in the first window.
- ON
-6.	Next, publish an OFF message still on the same home/lights/sitting_room topic on your second terminal.
- $ mosquitto_pub -m "OFF" -t "home/lights/sitting_room"
-7.	Your broker should display the new message as well.
-8.	 ON
- OFF
-9.	In this guide, you're manually subscribing and publishing messages using the Mosquitto Clients for demonstration purposes. In real-life applications, you should program small microchip devices that support the TCP/IP layer like the ESP8266 to push a message to a broker to control or even monitor devices. Here are some common use-cases where the Mosquitto package is used in real life.
-o	Monitoring patients' heartbeats and sending them to a central server for monitoring by doctors. This avoids heavy transport costs that the patients could incur by traveling to the hospital.
-o	In the gas and the oil industry, MQQT devices monitor different parameters and send the data to a central broker. Usually, this involves thousands of sensors in remote locations that collect and send data through satellite links that are billed per data usage. Luckily, the MQQT topology keeps the transmission minimal and only pushes data to the server when necessary.
-o	In the transport industry, MQQT devices monitor the location of trains in real-time and send data to the companies' headquarters in order to provide better insights to customers who want to travel without any delays.
-o	Also, the Mosquitto broker can be used as a middle layer in a chat application to refresh the online status of users and pass messages between end-users.
-o	Another common scenario where the Mosquitto server can be a good fit is in decoupled systems. Clients can send data to the broker, which then sends the data to a database for permanent storage.
-10.	In addition to the above use-cases, there are dozens of libraries that you can use to connect to the Mosquitto server using your favorite programming language, including PHP, Python, Golang, and more.
 # 3. Secure the Mosquitto Server
 By default, the Mosquitto server is not secured. However, you can make some configuration settings to secure it with usernames and passwords.
 1.	Mosquitto reads configuration information from the following location.
