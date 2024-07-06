@@ -52,6 +52,9 @@ When using an MQTT client, you connect to the Mosquitto broker to send and recei
 
          $ sudo apt install -y mosquitto-clients
 <img src="./images/MQTT_TEST.png" width=100% height=40%>
+Terminal 1:
+
+         $ mosquitto_pub -h localhost -t /home/sensors/temp/kitchen -m "Kitchen Temperature: 26°C"
 
 # 3. Secure the Mosquitto Server
 By default, the Mosquitto server is not secured. However, you can make some configuration settings to secure it with usernames and passwords.
