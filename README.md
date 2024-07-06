@@ -8,6 +8,7 @@ Prerequisites
 To follow along with this guide, you need:
 •	An Ubuntu 20.04 server.
 •	A non-root user with sudo rights.
+<img src="./images/mqtt.jpg" width=100% height=40%>
 1. Install the Mosquitto Server
 You'll pull the mosquitto package from Ubuntu's software repository by executing the following steps.
 1.	SSH to your server and update the package information index.
