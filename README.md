@@ -53,8 +53,6 @@ When using an MQTT client, you connect to the Mosquitto broker to send and recei
          $ sudo apt install -y mosquitto-clients
 
 
-         $ sudo apt install -y mosquitto-clients
-
 # 3. Secure the Mosquitto Server
 By default, the Mosquitto server is not secured. However, you can make some configuration settings to secure it with usernames and passwords.
 1.	Mosquitto reads configuration information from the following location.
